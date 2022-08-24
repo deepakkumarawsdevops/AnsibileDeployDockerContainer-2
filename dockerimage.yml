@@ -4,6 +4,6 @@
   become : yes
   tasks:
   - name : Docker image creation
-    command : docker build -t deepakkumarawsdevops:$BUILD_NUMBER .
+    command : docker build -t deepakkumarawsdevops:001 .
 ...      
 
