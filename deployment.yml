@@ -1,1 +1,11 @@
+---
+- name : Deployment using docker image
+  hosts : node1
+  become : yes
+  tasks:
+  - name : deployment
+    command : docker container run -dt --name webproject -p 8080:8080 deepakkumarawsdevops/webwarcal:001
+...      
+
+
 

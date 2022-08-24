@@ -44,7 +44,18 @@ sh 'ansible-playbook dockerimagepush.yml'
 }
 }
 
+stage('Deployment')
+{
 
+steps
+{
+
+echo 'deploying'
+
+sh 'ansible-playbook deployment.yml'
+
+}
+}
 
 
  }
