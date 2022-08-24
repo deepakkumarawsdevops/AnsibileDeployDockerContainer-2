@@ -31,5 +31,21 @@ steps
 }
 
 }
+stage(' Release docker image')
+{
+
+steps
+
+{
+echo 'Releasing'
+
+sh 'ansible-playbook dockerimagepush.yml'
+
+}
+}
+
+
+
+
  }
 }
