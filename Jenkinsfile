@@ -27,7 +27,7 @@ steps
 
 {
  echo 'Building using docker'
- sh ' ansible_playbook dockerimage.yml'
+ sh 'ansible_playbook dockerimage.yml'
 }
 
 }
