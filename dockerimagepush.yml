@@ -1,6 +1,7 @@
 ---
 - name : release docker image
   hosts : localhost
+  become : yes
   tasks :
   - name : login
     vars:
