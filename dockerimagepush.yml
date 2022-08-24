@@ -1,1 +1,16 @@
+---
+- name : release docker image
+  hosts : localhost
+  tasks :
+  - name : login
+    vars:
+     ansible_python_interpreter : /usr/bin/python3
+    docker_login:
+     username: deepakkumarawsdevops
+     password: sanjukta@123
+     email: kumar10.deepak@gmail.com
+  - name : push image
+    command : docker push deepakkumarawsdevops/webwarcal:001
+...
+~
 
