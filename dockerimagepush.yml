@@ -12,5 +12,5 @@
   - name : push image
     command : docker push deepakkumarawsdevops/webwarcal:001
 ...
-~
+
 
